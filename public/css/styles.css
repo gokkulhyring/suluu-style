@@ -1,0 +1,321 @@
+/* ============================================
+   SULUU STYLE — Custom CSS
+   ============================================ */
+
+/* ---------- Reborn font ---------- */
+@font-face {
+  font-family: 'Reborn';
+  src: url('../fonts/Reborn.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #e8e4da; }
+::-webkit-scrollbar-thumb { background: #76a6a6; border-radius: 3px; }
+
+/* ---------- Mobile Nav ---------- */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  background: #e8e4da;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.mobile-nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.mobile-drawer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 20px;
+}
+
+.mobile-drawer.open {
+  max-height: 400px;
+  padding: 0 20px 24px;
+}
+
+.mobile-drawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 12px;
+}
+
+.mobile-drawer ul li a {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px 0;
+  color: #000;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.mobile-drawer ul li a:hover { color: #76a6a6; }
+
+/* ---------- Burger Button ---------- */
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger-btn span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger-btn.open span:nth-child(2) { opacity: 0; }
+.burger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- Mobile nav visibility ---------- */
+@media (max-width: 768px) {
+  .mobile-nav { display: block; }
+  #hero { padding-top: 66px !important; }
+  .hero-desktop-nav { display: none !important; }
+}
+
+/* ---------- Hero Card ---------- */
+.hero-card {
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+}
+
+/* ---------- Rotating Badge ---------- */
+.rotating-badge {
+  animation: rotateBadge 14s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateBadge {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ---------- Fade-in animations ---------- */
+.fade-in-up, .fade-in-left {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in-up   { transform: translateY(30px); }
+.fade-in-left { transform: translateX(-60px); }
+
+.fade-in-up.visible,
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ---------- Service Cards ---------- */
+.service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ---------- External nav buttons (between heading and slides) ---------- */
+.carousel-arrow-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2d2828;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s, opacity 0.2s;
+  line-height: 1;
+}
+
+.carousel-arrow-dark:hover { background: #000; }
+
+.carousel-arrow-dark.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* ---------- Price Table ---------- */
+.price-table {
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.price-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.45);
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.03);
+}
+
+.price-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  vertical-align: middle;
+}
+
+.price-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #76a6a6;
+  white-space: nowrap;
+}
+
+.price-table tbody tr:hover td {
+  background: rgba(118,166,166,0.05);
+}
+
+/* ---------- Modals ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.50);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-box {
+  background: #e8e4da;
+  border-radius: 10px;
+  padding: 44px 40px;
+  max-width: 540px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(24px);
+  transition: transform 0.25s ease;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.18);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal-overlay.active .modal-box {
+  transform: translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  color: rgba(0,0,0,0.4);
+  transition: color 0.2s;
+  font-family: Arial, sans-serif;
+}
+
+.modal-close-btn:hover { color: #93060c; }
+
+@media (max-width: 540px) {
+  .modal-box { padding: 36px 20px; }
+}
+
+/* ============================================
+   SWIPER OVERRIDES
+   ============================================ */
+
+/* -- Team: swiper uses default overflow:hidden; nav buttons are external -- */
+.teamSwiper { position: relative; }
+
+/* -- Reviews: same side arrows -- */
+.reviewsSwiper {
+  position: relative;
+  overflow: visible !important;
+}
+
+.reviewsSwiper .swiper-button-prev,
+.reviewsSwiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: #76a6a6;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.14);
+  top: 50%;
+  margin-top: 0;
+}
+
+.reviewsSwiper .swiper-button-prev { left: -20px; }
+.reviewsSwiper .swiper-button-next { right: -20px; }
+
+.reviewsSwiper .swiper-button-prev::after,
+.reviewsSwiper .swiper-button-next::after {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Prevent body scroll when modal open */
+body.modal-open { overflow: hidden; }
+
+/* Review card shadow */
+.review-card {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+}
+
+/* Modal list content (matches original suluu.ae style) */
+.modal-section { margin-bottom: 20px; }
+.modal-section-title { font-weight: 700; font-size: 16px; margin-bottom: 6px; }
+.modal-list { list-style: disc; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.modal-list li { font-size: 16px; font-family: 'Montserrat', sans-serif; }
+.modal-book-btn {
+  display: block; width: 100%; text-align: center;
+  background: #76a6a6; color: #fff; border: none; cursor: pointer;
+  border-radius: 100px; padding: 14px 0;
+  font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600;
+  letter-spacing: 0.05em; margin-top: 28px;
+  transition: background 0.2s;
+}
+.modal-book-btn:hover { background: #5f8f8f; }
+

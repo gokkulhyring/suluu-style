@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suluu Style | Luxury Hair &amp Beauty Salon</title>
+  <meta name="description" content="Dubai's premier beauty salon — hair, nails, spa, lashes, and grooming." />
+  <link rel="icon" type="image/png" href="https://static.tildacdn.one/tild3833-3535-4161-b262-316134326239/Group_2085663939.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <!-- Tailwind compiled CSS -->
+  <link rel="stylesheet" href="css/tailwind.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Elfsight Google Reviews -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+</head>
+
+<body class="bg-beige font-sans overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════
+       MOBILE NAV (≤768px only)
+  ═══════════════════════════════════════ -->
+  <div id="mobileNav" class="mobile-nav">
+    <div class="mobile-nav__bar">
+      <img src="https://static.tildacdn.one/tild6130-6134-4136-b935-336430303564/S-1_3.png"
+           alt="Suluu Style" class="h-10 w-auto" />
+      <button id="burgerBtn" class="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobileDrawer" class="mobile-drawer">
+      <ul>
+        <li><a href="#about"    onclick="closeMobileMenu()">About us</a></li>
+        <li><a href="#services" onclick="closeMobileMenu()">Our Portfolio</a></li>
+        <li><a href="#reviews"  onclick="closeMobileMenu()">Client Reviews</a></li>
+        <li><a href="#location" onclick="closeMobileMenu()">Location</a></li>
+      </ul>
+      <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20service."
+         target="_blank" rel="noopener"
+         class="inline-block mt-6 bg-teal text-white text-sm font-medium rounded-full px-8 py-3 uppercase tracking-widest">
+        Book now
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" class="bg-beige pt-[18px] pb-[15px] px-5 lg:px-[90px]">
+    <div class="hero-card relative mx-auto max-w-[1300px] h-[480px] md:h-[540px] lg:h-[640px] rounded-[13px] overflow-hidden">
+
+      <!-- Background photo -->
+      <img
+        src="https://static.tildacdn.one/tild3733-3230-4031-b765-663437633939/Group_2085663938.png"
+        alt="Suluu Style Salon"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/[0.31]"></div>
+
+      <!-- ── DESKTOP NAV (inside hero) ── -->
+      <div class="hero-desktop-nav absolute top-0 left-0 right-0 z-20 flex items-center justify-between pl-[22px] pr-[40px] lg:pl-[30px] lg:pr-[59px] pt-[22px]">
+        <!-- Left group: Logo + Nav links together -->
+        <div class="flex items-center gap-8 lg:gap-12">
+          <a href="https://suluu.ae/" target="_blank" rel="noopener" class="flex-shrink-0">
+            <img
+              src="https://static.tildacdn.one/tild3731-3930-4238-b464-643031353430/S-2_3.png"
+              alt="Suluu Style Logo"
+              class="w-[80px] h-auto"
+            />
+          </a>
+          <nav class="flex items-center gap-6 lg:gap-9">
+            <a href="#about"    class="text-white text-[14px] font-medium tracking-wide hover:opacity-70 transition-opacity">About us</a>
+            <a href="#services" class="text-white text-[14px] font-medium tracking-wide hover:opacity-70 transition-opacity">Our Portfolio</a>
+            <a href="#reviews"  class="text-white text-[14px] font-medium tracking-wide hover:opacity-70 transition-opacity">Client Reviews</a>
+            <a href="#location" class="text-white text-[14px] font-medium tracking-wide hover:opacity-70 transition-opacity">Location</a>
+          </nav>
+        </div>
+        <!-- Phone numbers right -->
+        <div class="flex-shrink-0">
+          <a href="https://wa.me/971585655089" target="_blank" rel="noopener"
+             class="flex items-center gap-2 text-white text-[15px] font-medium leading-[1.8] hover:opacity-70 transition-opacity">
+            <img src="https://static.tildacdn.one/tild3630-3337-4764-b965-313531396663/photo.png"
+                 alt="WhatsApp" class="w-[22px] h-auto" />
+            +971 58 565 5089
+          </a>
+          <a href="tel:+97142590910"
+             class="block text-white text-[15px] font-medium leading-[1.8] hover:opacity-70 transition-opacity pl-[30px]">
+            +971 4 259 0910
+          </a>
+        </div>
+      </div>
+
+      <!-- ── HERO CONTENT ── -->
+      <div class="absolute inset-0 flex flex-col items-center text-center px-6 pt-[200px] md:pt-[280px] lg:pt-[340px]">
+        <h1 class="font-display text-white uppercase font-light leading-none tracking-[0.05em] mb-5
+                   text-[26px] md:text-[60px] md:whitespace-nowrap">
+          Suluu Style Beauty Salon
+        </h1>
+        <p class="text-white font-sans font-normal leading-[1.55] mb-8 max-w-[420px]
+                  text-[15px] md:text-[21px]">
+          Where beauty meets precision, with <br> a signature touch of luxury
+        </p>
+        <div class="flex flex-col items-center gap-3">
+          <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20service."
+             target="_blank" rel="noopener"
+             class="bg-white text-black rounded-[50px] px-12 py-[14px] text-[15px] font-medium tracking-widest hover:bg-white/90 transition-all">
+            Book now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ═══════════════════════════════════════
+       ABOUT / WELCOME
+  ═══════════════════════════════════════ -->
+  <section id="about" class="bg-beige py-[45px] sm:py-[30px]">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+      <div class="about-grid grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <!-- Image column -->
+        <div class="relative w-full h-[401px]">
+          <img
+            src="https://static.tildacdn.one/tild3564-3163-4338-b862-323435373339/IMG_4781.PNG"
+            alt="Suluu Style Salon Interior"
+            class="absolute inset-0 w-full h-full object-cover rounded-[9px]"
+          />
+          <!-- Rotating circular badge — top-left corner of image -->
+          <div class="rotating-badge absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-10">
+            <img
+              src="https://static.tildacdn.one/tild6437-3362-4532-b766-613830363962/curve_text.png"
+              alt=""
+              class="w-[130px] h-[130px]"
+            />
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text fade-in-up">
+          <h2 class="font-display uppercase font-light tracking-[0.15em] mb-6
+                     text-[30px] sm:text-[38px] md:text-[52px] leading-tight">
+            Welcome to<br />Suluu Style
+          </h2>
+          <p class="text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[1.45] mb-6">
+            Welcome to Suluu Style Beauty Salon — Dubai's premier destination for all your beauty needs. Here, we believe that beauty is an art, and we strive to make every visit to our salon an indulgent and luxurious experience. Our expert team is dedicated to helping you look and feel your best.
+          </p>
+          <a href="#services"
+             class="inline-block bg-teal text-white rounded-[30px] px-8 py-[10px] text-[14px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+            Discover services
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- ═══════════════════════════════════════
+       OUR Services
+  ═══════════════════════════════════════ -->
+  <section id="hot-offers" class="bg-beige py-[75px] sm:py-[45px] overflow-hidden px-5 lg:px-[60px]">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10 text-center">
+      <h2 class="font-display uppercase font-light tracking-[0.15em]
+                 text-[30px] sm:text-[38px] md:text-[52px] leading-tight mb-6">
+        Our Services
+      </h2>
+      <!-- External nav — between heading and slides -->
+      <div class="flex justify-center gap-3 mb-8">
+        <button class="ext-prev offers-prev-ext carousel-arrow-dark" aria-label="Previous">&#8592;</button>
+        <button class="ext-next offers-next-ext carousel-arrow-dark" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="swiper offersSwiper w-full">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide ">
+          <div class="offer-card rounded-[10px] overflow-hidden">
+            <img src="https://static.tildacdn.one/tild3033-3030-4835-b862-366237393835/43.png"
+                 alt="Hot Offer" class="w-full aspect-[4/5] object-cover" />
+          </div>
+          <div class="flex justify-center mt-4">
+            <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20Super%20Detox%20Package."
+               target="_blank" rel="noopener"
+               class="bg-teal text-white rounded-[50px] px-4 py-2 text-xs font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+              Book now
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide ">
+          <div class="offer-card rounded-[10px] overflow-hidden">
+            <img src="https://static.tildacdn.one/tild3164-6665-4262-a538-626435646236/41.png"
+                 alt="Hot Offer" class="w-full aspect-[4/5] object-cover" />
+          </div>
+          <div class="flex justify-center mt-4">
+            <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20Ultimate%20Spa%20Detox%20Package."
+               target="_blank" rel="noopener"
+               class="bg-teal text-white rounded-[50px] px-4 py-2 text-xs font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+              Book now
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide ">
+          <div class="offer-card rounded-[10px] overflow-hidden">
+            <img src="https://static.tildacdn.one/tild3030-3563-4363-b536-386139666562/42.png"
+                 alt="Hot Offer" class="w-full aspect-[4/5] object-cover" />
+          </div>
+          <div class="flex justify-center mt-4">
+            <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20Body%20and%20Face%20Treatment%20Package."
+               target="_blank" rel="noopener"
+               class="bg-teal text-white rounded-[50px] px-4 py-2 text-xs font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+              Book now
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide ">
+          <div class="offer-card rounded-[10px] overflow-hidden">
+            <img src="https://static.tildacdn.one/tild3137-3737-4463-b664-333637663038/40.png"
+                 alt="Hot Offer" class="w-full aspect-[4/5] object-cover" />
+          </div>
+          <div class="flex justify-center mt-4">
+            <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20Premium%20Detox%20Package."
+               target="_blank" rel="noopener"
+               class="bg-teal text-white rounded-[50px] px-4 py-2 text-xs font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+              Book now
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES — OUR PORTFOLIO
+  ═══════════════════════════════════════ -->
+  <section id="services" class="bg-beige py-[75px] sm:py-[45px] overflow-hidden pl-5 lg:pl-[60px]">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10 text-center">
+      <h2 class="font-display uppercase font-light tracking-[0.15em]
+                 text-[30px] sm:text-[38px] md:text-[52px] leading-tight mb-6">
+        OUR PORTFOLIO
+      </h2>
+      <!-- External nav — between heading and slides -->
+      <div class="flex justify-center gap-3 mb-8">
+        <button class="ext-prev services-prev-ext carousel-arrow-dark" aria-label="Previous">&#8592;</button>
+        <button class="ext-next services-next-ext carousel-arrow-dark" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="swiper servicesSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- 1. CLASSIC -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild6163-6436-4437-b032-356531663839/Rectangle_23.png"
+                   alt="Classic" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Classic</span>
+                <button onclick="openModal('classic')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. HARD GEL -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3838-3831-4130-b738-346664306162/01.png"
+                   alt="Hard Gel" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Hard Gel</span>
+                <button onclick="openModal('hardgel')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. EXTRAS -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild6331-3531-4035-a261-313163326163/world-art-day-celebr.jpg"
+                   alt="Extras" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Extras</span>
+                <button onclick="openModal('extras')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. COLOR -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3739-3763-4138-b465-343164306662/blonde-female-gettin.jpg"
+                   alt="Color" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Color</span>
+                <button onclick="openModal('color')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. CUT -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3435-6462-4436-b165-656465393836/front-view-woman-get.jpg"
+                   alt="Cut" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Cut</span>
+                <button onclick="openModal('cut')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. TREATMENTS -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3732-3637-4034-b765-613763306266/woman-having-hair-wa.jpg"
+                   alt="Treatments" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Treatments</span>
+                <button onclick="openModal('treatments')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. MASSAGE -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3265-3063-4362-b736-316231666137/young-woman-relaxing.jpg"
+                   alt="Massage" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Massage (30 min)</span>
+                <button onclick="openModal('massage')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. WAXING -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3264-6638-4364-b261-303864373039/close-up-hands-apply.jpg"
+                   alt="Waxing" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Waxing</span>
+                <button onclick="openModal('waxing')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. STYX -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild3961-3838-4762-a532-393136366366/body-wraps-for-weigh.png"
+                   alt="STYX" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">STYX</span>
+                <button onclick="openModal('styx')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. EYELASHES -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild6639-3232-4863-a230-616563663563/Rectangle_25.png"
+                   alt="Eyelashes" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Eyelashes</span>
+                <button onclick="openModal('eyelashes')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. PRO SKIN -->
+        <div class="swiper-slide !w-[280px] lg:!w-[380px]">
+          <div class="service-card rounded-[14px] overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.tildacdn.one/tild6561-6262-4230-b837-396337653561/Rectangle_483.png"
+                   alt="Pro Skin" class="w-full aspect-[4/5] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+              <div class="absolute bottom-0 left-0 right-0 px-[22px] pb-5 flex flex-col gap-3">
+                <span class="text-white font-sans font-medium text-base uppercase tracking-wide">Pro Skin</span>
+                <button onclick="openModal('proskin')"
+                  class="self-start bg-teal text-white rounded-[555px] px-6 py-2 text-[12px] font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       OUR SPECIALISTS (TEAM)
+  ═══════════════════════════════════════ -->
+  <section id="team" class="bg-beige py-[45px] sm:py-[30px]">
+    <div class="max-w-[1300px] mx-auto px-5 lg:px-10 mb-8 text-center">
+      <h2 class="font-display uppercase font-light tracking-[0.15em] leading-tight mb-6 fade-in-left
+                 text-[30px] sm:text-[38px] md:text-[52px]">
+        Our Specialists
+      </h2>
+    </div>
+
+    <div class="relative max-w-[1400px] mx-auto px-[60px] lg:px-[90px]">
+
+      <!-- clip wrapper: hides 4th card peek; buttons sit outside this -->
+      <div class="overflow-hidden">
+        <div class="swiper teamSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6663-3831-4331-b333-653031343562/Aimira_nail_technici.jpg"
+                       alt="Aimira" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Aimira</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Nail Technician</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6434-3538-4266-b435-626239633830/IMG_9741.jpg"
+                       alt="Meerim" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Meerim</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Nail Technician</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6631-6131-4665-b433-386232396337/ALENA_HAIR_DRESSER.jpg"
+                       alt="Alena" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Alena</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Hair Technician</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6666-3136-4566-a230-363536316631/IMG_9804.jpg"
+                       alt="Zhanyl" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Zhanyl</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Hair Technician</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild3366-3862-4565-b063-623764323362/Frame_1321315875.png"
+                       alt="Princess" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Princess</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Grooming Technician</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild3336-3464-4431-a535-343137626562/Frame_1321315874.png"
+                       alt="Ottily" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Ottily</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Receptionist</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild3463-3161-4532-b136-366231646165/Jenny-salon-supervis.jpg"
+                       alt="Jenny" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Jenny</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Supervisor</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6331-3930-4161-a363-613865373564/THAE-GROOMING.jpg"
+                       alt="Thae" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Thae</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Salon Helper</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card bg-white rounded-[14px] overflow-hidden fade-in-up">
+                <div class="aspect-square overflow-hidden">
+                  <img src="https://static.tildacdn.one/tild6235-3937-4130-b561-316131343638/Dana--saloon-groomim.jpg"
+                       alt="Dana" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="px-3 py-2">
+                  <h3 class="font-sans font-medium text-[14px] mb-0.5">Dana</h3>
+                  <p class="font-sans font-normal text-[12px] text-teal">Grooming</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav buttons outside overflow-hidden so they aren't clipped -->
+      <button class="team-prev absolute left-[12px] lg:left-[27px] top-[42%] -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white border-none cursor-pointer flex items-center justify-center" style="box-shadow:0 2px 12px rgba(0,0,0,0.18)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2d2828" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="team-next absolute right-[12px] lg:right-[27px] top-[42%] -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white border-none cursor-pointer flex items-center justify-center" style="box-shadow:0 2px 12px rgba(0,0,0,0.18)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2d2828" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       REVIEWS — FEEDBACK FROM OUR CLIENTS
+  ═══════════════════════════════════════ -->
+  <section id="reviews" class="bg-beige py-[45px] sm:py-[30px] overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10 mb-10 text-center">
+      <h2 class="font-display uppercase font-light tracking-[0.15em] leading-tight mb-6 fade-in-left
+                 text-[30px] sm:text-[38px] md:text-[52px]">
+        Feedback from&nbsp;<span class="text-gold">our clients</span>
+        <img src="https://static.tildacdn.one/tild3034-3538-4666-b061-346233636137/Group_2085663931.png"
+             alt="" class="inline-block w-5 h-5 ml-2 align-middle" />
+      </h2>
+    </div>
+
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+      <div class="elfsight-app-6b0cd35e-5575-4156-9a62-44a38e5a8f2e" data-elfsight-app-lazy></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       LOCATION / CONTACT + FOOTER WRAPPER
+       (shared faded background image)
+  ═══════════════════════════════════════ -->
+  <div class="relative bg-beige overflow-hidden">
+    <!-- Faded background image spans contact section + footer -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://static.tildacdn.one/tild3733-3230-4031-b765-663437633939/Group_2085663938.png"
+           alt="" class="w-full h-full object-cover object-top opacity-[0.10]" />
+    </div>
+
+  <section id="location" class="relative z-10 py-[65px] sm:py-[45px]">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+      <div class="location-grid grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="font-display uppercase font-light tracking-[0.15em] leading-tight text-gold mb-6
+                     text-[30px] sm:text-[38px] md:text-[52px]">
+            Contact us
+          </h2>
+          <div class="space-y-6">
+            <div>
+              <a href="tel:+971585655089" class="block font-sans text-[18px] sm:text-[20px] md:text-[22px] font-normal hover:text-teal transition-colors">
+                +971 58 565 5089
+              </a>
+              <a href="tel:+97142590910" class="block font-sans text-[18px] sm:text-[20px] md:text-[22px] font-normal hover:text-teal transition-colors">
+                +971 4 259 0910
+              </a>
+            </div>
+            <div>
+              <a href="mailto:frontdesk@suluu.ae" class="block font-sans text-[18px] sm:text-[20px] md:text-[22px] font-normal hover:text-teal transition-colors">
+                frontdesk@suluu.ae
+              </a>
+            </div>
+            <div>
+              <p class="font-sans text-[18px] sm:text-[20px] md:text-[22px] font-normal leading-[1.5]">
+                Vincitore Benessere, Retail 32, Block B
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="h-[400px] rounded-[8px] overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.160091729616!2d55.242944599999994!3d25.0625625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ddaf4bffed3%3A0x859044459bd7fb34!2sSuluu!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+            width="100%" height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Suluu Style Location">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="relative z-10">
+
+
+    <!-- ── Row 1: Logo · Nav · Book now ── -->
+    <div class="max-w-[1300px] mx-auto px-5 lg:px-[90px] py-5 flex items-center justify-between gap-6 flex-wrap">
+
+      <!-- Logo -->
+      <img src="https://static.tildacdn.one/tild6130-6134-4136-b935-336430303564/S-1_3.png"
+           alt="Suluu Style" class="h-[64px] w-auto" />
+
+      <!-- Nav links -->
+      <nav class="flex items-center gap-8 lg:gap-12 flex-wrap">
+        <a href="#about"    class="font-sans text-[16px] font-medium hover:text-teal transition-colors">About us</a>
+        <a href="#services" class="font-sans text-[16px] font-medium hover:text-teal transition-colors">Our experiences</a>
+        <a href="#reviews"  class="font-sans text-[16px] font-medium hover:text-teal transition-colors">Client reviews</a>
+        <a href="#location" class="font-sans text-[16px] font-medium hover:text-teal transition-colors">Location</a>
+      </nav>
+
+      <!-- Book now button -->
+      <a href="https://wa.me/971585655089?text=Hello!%20I%20want%20to%20book%20a%20service."
+         target="_blank" rel="noopener"
+         class="bg-teal text-white rounded-[50px] px-10 py-[13px] text-[15px] font-medium tracking-widest hover:bg-teal-dark transition-all">
+        Book now
+      </a>
+
+    </div>
+
+    <!-- ── Divider ── -->
+    <div class="border-t border-black/10"></div>
+
+    <!-- ── Row 2: Copyright · Privacy · WGG ── -->
+    <div class="max-w-[1300px] mx-auto px-5 lg:px-[90px] py-4 flex items-center justify-between gap-4 flex-wrap">
+      <div class="flex items-center gap-6">
+        <p class="font-sans text-[13px] text-black/50">
+          Suluu Style Beauty Salon 2025. All rights reserved.
+        </p>
+        <a href="https://beauty-republic-salon.ae/privacy" target="_blank" rel="noopener"
+           class="font-sans text-[13px] text-black/50 hover:text-teal transition-colors">Privacy Policy</a>
+      </div>
+      <a href="https://wgg-agency.com/" target="_blank" rel="noopener"
+         class="font-sans text-[13px] text-black/50 hover:text-teal transition-colors">Made by WGG</a>
+    </div>
+
+  </footer>
+  </div><!-- end location+footer bg wrapper -->
+
+  <!-- ═══════════════════════════════════════
+       SERVICE MODALS
+  ═══════════════════════════════════════ -->
+
+  <!-- CLASSIC -->
+  <div id="modal-classic" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('classic')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Classic</h2>
+      <div class="modal-section">
+        <p class="modal-section-title">Classic</p>
+        <ul class="modal-list">
+          <li>Manicure — AED 110</li>
+          <li>Pedicure — AED 180</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Regular polish</p>
+        <ul class="modal-list">
+          <li>Manicure — AED 140</li>
+          <li>Pedicure — AED 210</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Gelish</p>
+        <ul class="modal-list">
+          <li>Manicure — AED 240</li>
+          <li>Pedicure — AED 240</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li><strong>Nail repair</strong> — AED 40</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- HARD GEL -->
+  <div id="modal-hardgel" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('hardgel')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Hard Gel</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Extensions — AED 380</li>
+          <li>Gel tips — AED 380</li>
+          <li>Refill — AED 320</li>
+          <li>Extra long — AED 450</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- EXTRAS -->
+  <div id="modal-extras" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('extras')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Extras</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Overlay builder gel — AED 280</li>
+          <li>Hand SPA — AED 40</li>
+          <li>Foot SPA — AED 80</li>
+          <li>Ombre, fresh designs — AED 20</li>
+          <li>Footlogix treatment — AED 70</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- COLOR -->
+  <div id="modal-color" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('color')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Color</h2>
+      <div class="modal-section">
+        <p class="modal-section-title">Root</p>
+        <ul class="modal-list">
+          <li>Short — AED 350</li>
+          <li>Medium — AED 350</li>
+          <li>Long — AED 350</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Full head</p>
+        <ul class="modal-list">
+          <li>Short — AED 450</li>
+          <li>Medium — AED 650</li>
+          <li>Long — AED 850</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Toning</p>
+        <ul class="modal-list">
+          <li>Short — AED 250</li>
+          <li>Medium — AED 350</li>
+          <li>Long — AED 450</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Highlights (Contouring)</p>
+        <ul class="modal-list">
+          <li>Short — AED 200</li>
+          <li>Medium — AED 300</li>
+          <li>Long — AED 500</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Highlights (Half Head)</p>
+        <ul class="modal-list">
+          <li>Short — AED 600</li>
+          <li>Medium — AED 750</li>
+          <li>Long — AED 850</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Highlights (Full Head)</p>
+        <ul class="modal-list">
+          <li>Short — AED 750</li>
+          <li>Medium — AED 950</li>
+          <li>Long — AED 1250</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Combo coloring</p>
+        <ul class="modal-list">
+          <li>Short — AED 1200</li>
+          <li>Medium — AED 1500</li>
+          <li>Long — AED 1700</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- CUT -->
+  <div id="modal-cut" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('cut')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Cut</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Kid's trim — AED 150</li>
+          <li>Kid's cut — AED 250</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Wash &amp; blow dry</p>
+        <ul class="modal-list">
+          <li>Short — AED 140</li>
+          <li>Medium — AED 160</li>
+          <li>Long — AED 200</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Styling</p>
+        <ul class="modal-list">
+          <li>Short — AED 250</li>
+          <li>Medium — AED 350</li>
+          <li>Long — AED 450+</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Haircut — AED 350</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- TREATMENTS -->
+  <div id="modal-treatments" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('treatments')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Treatments</h2>
+      <div class="modal-section">
+        <p class="modal-section-title">Re-mersive Booster</p>
+        <ul class="modal-list">
+          <li>Short — AED 650</li>
+          <li>Medium — AED 750</li>
+          <li>Long — AED 850</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Hot oil (head massage)</p>
+        <ul class="modal-list">
+          <li>Short — AED 150</li>
+          <li>Medium — AED 150</li>
+          <li>Long — AED 150</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Henna (Philip Martin's)</p>
+        <ul class="modal-list">
+          <li>Short — AED 450</li>
+          <li>Medium — AED 650</li>
+          <li>Long — AED 700</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <ul class="modal-list"><li>Scalp scrub — AED 100</li></ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Philip Martin's</p>
+        <ul class="modal-list">
+          <li>for dry hair — AED 450</li>
+          <li>for hair loss — AED 450</li>
+          <li>scalp treatment — AED 450</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <p class="modal-section-title">Truss</p>
+        <ul class="modal-list">
+          <li>for dry hair — AED 350</li>
+          <li>for hair loss — AED 350</li>
+          <li>scalp treatment — AED 350</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- MASSAGE -->
+  <div id="modal-massage" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('massage')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Massage (30 min)</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Hands — AED 80</li>
+          <li>Back — AED 100</li>
+          <li>Foot — AED 110</li>
+          <li>Neck &amp; Shoulder — AED 100</li>
+          <li>Head — AED 100</li>
+          <li>Legs — AED 140</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- WAXING -->
+  <div id="modal-waxing" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('waxing')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Waxing</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Bikini — AED 90</li>
+          <li>Brazilian — AED 130</li>
+          <li>Face — AED 60</li>
+          <li>Full Arm — AED 80</li>
+          <li>Lip / chin — AED 30</li>
+          <li>Underarm — AED 45</li>
+          <li>Half arm — AED 55</li>
+          <li>Half leg — AED 90</li>
+          <li>Full leg — AED 140</li>
+          <li>Full body (ex. face / bikini) — AED 450</li>
+          <li>Full body with face / bikini — AED 550</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- STYX -->
+  <div id="modal-styx" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('styx')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">STYX</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Body wrap — AED 600</li>
+          <li>With face massage — AED 680</li>
+          <li>With facial — AED 850</li>
+          <li>With head massage — AED 680</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- EYELASHES -->
+  <div id="modal-eyelashes" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('eyelashes')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Eyelashes</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>Classic — AED 300</li>
+          <li>2D — AED 380</li>
+          <li>3D — AED 450</li>
+          <li>4D — AED 550</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- PRO SKIN -->
+  <div id="modal-proskin" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('proskin')">&times;</button>
+      <h2 class="font-display uppercase font-light tracking-[0.12em] text-[48px] sm:text-[32px] mb-8">Pro Skin</h2>
+      <div class="modal-section">
+        <ul class="modal-list">
+          <li>PRO Skin 60 Dermatologica — AED 350</li>
+          <li>Touch Therapy Facial Massage — AED 200</li>
+        </ul>
+      </div>
+      <button onclick="openBooking()" class="modal-book-btn">Book now</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BOOKING MODAL
+  ═══════════════════════════════════════ -->
+  <div id="modal-booking" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeBooking()">&times;</button>
+      <h2 class="font-display uppercase font-normal tracking-wide text-[40px] sm:text-[28px] mb-3">Book your visit</h2>
+      <p class="font-sans text-sm text-black/60 mb-8">Simply fill out the form below and we'll contact you soon.</p>
+
+      <form id="bookingForm" class="flex flex-col gap-4" onsubmit="submitBooking(event)">
+        <input
+          type="text" name="name" placeholder="Your name" required
+          class="w-full bg-white text-black font-sans text-sm rounded-[55px] px-6 py-[14px] border border-black/15 outline-none focus:border-teal placeholder:text-black/40 transition-colors"
+        />
+        <input
+          type="tel" name="phone" id="phoneInput" placeholder="+971 __ ___ ____" required
+          class="w-full bg-white text-black font-sans text-sm rounded-[55px] px-6 py-[14px] border border-black/15 outline-none focus:border-teal placeholder:text-black/40 transition-colors"
+        />
+        <input
+          type="text" name="date" id="dateInput" placeholder="DD-MM-YYYY"
+          class="w-full bg-white text-black font-sans text-sm rounded-[55px] px-6 py-[14px] border border-black/15 outline-none focus:border-teal placeholder:text-black/40 transition-colors"
+        />
+        <select name="service"
+          class="w-full bg-white text-black font-sans text-sm rounded-[55px] px-6 py-[14px] border border-black/15 outline-none focus:border-teal transition-colors appearance-none cursor-pointer">
+          <option value="">Select a service</option>
+          <option>Hair Care</option>
+          <option>Nails &amp; Lashes</option>
+          <option>Spa Services</option>
+        </select>
+        <button type="submit"
+          class="w-full bg-teal text-white rounded-[55px] py-[14px] text-sm font-medium uppercase tracking-widest hover:bg-teal-dark transition-all">
+          Send request
+        </button>
+      </form>
+
+      <div id="bookingSuccess" class="hidden text-center py-10">
+        <div class="w-16 h-16 bg-teal rounded-full flex items-center justify-center mx-auto mb-5">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <p class="font-display text-[22px] font-normal uppercase">Thanks for the request!</p>
+        <p class="font-sans text-sm text-black/60 mt-2">Our manager will contact you shortly to confirm the time</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
